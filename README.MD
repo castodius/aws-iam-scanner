@@ -30,7 +30,7 @@ If an Account is in the process of being closed the script will still report thi
 
 When defining a Resource Policy such as an SQS Queue Policy you can specify an AWS Principal. Upon Policy creation/update AWS will validate if the AWS Principal exists or not. If it does not exist an error will be thrown, otherwise creation will proceed. This project abuses this fact.
 
-I discovered this behavior while working on a Secrets Manager Secret Policy that was supposed to be accessed by a specific cross Account role. I reported the finding to AWS who replied everything is working as intended. To my knowledge there is no way for the owner of the targeted Account to know that 
+I discovered this behavior while working on a Secrets Manager Secret Policy that was supposed to be accessed by a specific cross Account role. I reported the finding to AWS who replied everything was working as intended. To my knowledge there is no way for the owner of the targeted Account to know that someone has checked the presence of things in their account in this manner.
 
 # Possible usage
 
