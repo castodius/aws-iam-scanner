@@ -16,7 +16,7 @@ const { queueName, principals } = yargs(hideBin(process.argv))
       demandOption: true,
       type: 'array',
       string: true
-    },
+    }
   })
   .usage('$0 --principals 111122223333 arn:aws:iam::444455556666:user/username@example.com')
   .help()
