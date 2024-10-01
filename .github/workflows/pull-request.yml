@@ -28,7 +28,7 @@ jobs:
         with:
           audience: sts.amazonaws.com
           aws-region: eu-west-1
-          role-to-assume: arn:aws:iam::668387820763:role/aws-iam-scanner
+          role-to-assume: arn:aws:iam::668387820763:role/github-aws-iam-scanner
 
       - name: Run script
         # Second and fourth account taken from https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.html
