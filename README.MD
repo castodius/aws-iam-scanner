@@ -1,6 +1,6 @@
 # Introduction
 
-Proof-of-concept of checking whether an AWS Principals exist. You can check if the Account exists, if an IAM User or IAM Role exists **without having access to the Account in question**.
+Proof-of-concept of checking whether an AWS Principal exists. You can check whether an Account, an IAM User or IAM Role exists **without having access to the Account in question**.
 
 # Usage
 
@@ -10,7 +10,7 @@ Clone the repository. Install the dependencies
 yarn install --immutable
 ```
 
-Make sure you have an active session with any AWS Account where you are allowed to create and delete SQS Queues. Run the supplied script. **Please note that the script will create and delete an SQS Queue.**
+Make sure you have an active session with **any** AWS Account where you are allowed to create and delete SQS Queues. Run the supplied script. **Please note that the script will create and delete an SQS Queue.**
 
 ```zsh
 yarn start --principals 111122223333 arn:aws:iam::444455556666:user/my-user arn:aws:iam::777788889999:role/cool-role
