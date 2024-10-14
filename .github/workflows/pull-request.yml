@@ -30,6 +30,9 @@ jobs:
           aws-region: eu-west-1
           role-to-assume: arn:aws:iam::668387820763:role/github-aws-iam-scanner
 
-      - name: Run script
+      - name: Run tests
+        run: yarn test
+
+      - name: Run CLI
         # Second and fourth account taken from https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.html
         run: yarn start --principals 111122223333 392220576650 444455556666 718770453195
