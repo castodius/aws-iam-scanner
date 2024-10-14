@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "start": "tsx index.ts"
+    "start": "tsx src/cli.ts"
   },
   "dependencies": {
     "@aws-sdk/client-sqs": "^3.658.1",
